@@ -1,0 +1,698 @@
+#users header.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 14px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  background: #fff;
+}
+
+#users header.header .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#users header.header .left .image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+#users header.header .left .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+#users header.header .left span {
+  font-weight: 700;
+  font-size: 25px;
+  pointer-events: none;
+}
+
+#users header.header .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 20px;
+}
+
+#users header.header .right .settings {
+  position: relative;
+}
+
+#users header.header .right .settings .settingPopup {
+  -webkit-box-shadow: 3px 3px 10px 0px rgba(44, 44, 44, 0.103);
+          box-shadow: 3px 3px 10px 0px rgba(44, 44, 44, 0.103);
+  position: absolute;
+  left: -250%;
+  border: 0.5px solid rgba(44, 44, 44, 0.219);
+  width: 150px;
+  padding: 5px 20px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 4px;
+  background: #fff !important;
+  list-style: none;
+  text-align: left;
+}
+
+#users header.header .right .settings .settingPopup li {
+  font-size: 13px;
+  font-weight: 500;
+  padding: 5px 0px;
+}
+
+#users header.header .right .settings .settingPopup li:active {
+  color: grey;
+}
+
+#users header.header .right .settings .settingPopup li:last-child {
+  color: red;
+}
+
+#users header.header .right .settings .settingPopup li:nth-last-child(2) {
+  color: red;
+}
+
+#users header.header .right .settings .settingPopup::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  position: absolute;
+  top: -5px;
+  right: 10px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  border-top: 0.5px solid rgba(44, 44, 44, 0.219);
+  border-left: 0.5px solid rgba(44, 44, 44, 0.219);
+}
+
+#users header.header .right .settings i {
+  background: rgba(190, 190, 190, 0.123);
+  padding: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.63);
+}
+
+#users header.header .right .settings i:active {
+  background: rgba(190, 190, 190, 0.274);
+}
+
+#users header.header .right .newChat i {
+  background: rgba(190, 190, 190, 0.123);
+  padding: 12px 13px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.63);
+}
+
+#users header.header .right .newChat i:active {
+  background: rgba(190, 190, 190, 0.274);
+}
+
+#users #scrollWrapper {
+  overflow: auto;
+  height: 100vh;
+}
+
+#users #scrollWrapper main.search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#users #scrollWrapper main.search .searchWrapper {
+  width: 90%;
+  border-radius: 50px;
+  padding: 8px;
+  background: rgba(206, 206, 206, 0.192);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#users #scrollWrapper main.search .searchWrapper i {
+  font-size: 19px;
+  color: #b4b4b4;
+}
+
+#users #scrollWrapper main.search .searchWrapper input {
+  background: none;
+  outline: none;
+  border: none;
+}
+
+#users #scrollWrapper main.usersList {
+  margin-top: 5px;
+}
+
+#users #scrollWrapper main.usersList .title {
+  padding: 0px 20px;
+}
+
+#users #scrollWrapper main.usersList .title span {
+  font-weight: 600;
+  font-size: 18px;
+  color: rgba(133, 133, 133, 0.664);
+}
+
+#users #scrollWrapper main.usersList .penLi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 9px 10px;
+  margin: 0px 10px;
+  border-radius: 20px;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+#users #scrollWrapper main.usersList .penLi .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+#users #scrollWrapper main.usersList .penLi .left .image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+}
+
+#users #scrollWrapper main.usersList .penLi .left .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+#users #scrollWrapper main.usersList .penLi .left .image .active {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  background: #1cd11c;
+  border: 2px solid #fff;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+#users #scrollWrapper main.usersList .penLi .left .image .inactive {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  background: grey;
+  border: 2px solid #fff;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+#users #scrollWrapper main.usersList .penLi .left .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#users #scrollWrapper main.usersList .penLi .left .details span.name {
+  font-weight: 500;
+  font-size: 19px;
+  color: rgba(27, 27, 27, 0.767);
+}
+
+#users #scrollWrapper main.usersList .penLi .left .details span.status {
+  font-weight: 500;
+  font-size: 12px;
+  margin-left: 20px;
+  color: rgba(27, 27, 27, 0.466);
+}
+
+#users #scrollWrapper main.usersList .penLi .right i.fa-times {
+  font-size: 20px;
+  cursor: pointer;
+  background: rgba(110, 110, 110, 0.089);
+  padding: 10px 14px;
+  border-radius: 50%;
+}
+
+#users #scrollWrapper main.usersList .penLi .right i:active {
+  background: rgba(158, 158, 158, 0.39);
+}
+
+#users #scrollWrapper main.usersList .reqLi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 9px 10px;
+  margin: 0px 10px;
+  border-radius: 20px;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+#users #scrollWrapper main.usersList .reqLi .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+#users #scrollWrapper main.usersList .reqLi .left .image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+}
+
+#users #scrollWrapper main.usersList .reqLi .left .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+#users #scrollWrapper main.usersList .reqLi .left .image .active {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  background: #1cd11c;
+  border: 2px solid #fff;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+#users #scrollWrapper main.usersList .reqLi .left .image .inactive {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  background: grey;
+  border: 2px solid #fff;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+#users #scrollWrapper main.usersList .reqLi .left .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#users #scrollWrapper main.usersList .reqLi .left .details span.name {
+  font-weight: 500;
+  font-size: 19px;
+  color: rgba(27, 27, 27, 0.767);
+}
+
+#users #scrollWrapper main.usersList .reqLi .left .details span.status {
+  font-weight: 500;
+  font-size: 12px;
+  margin-left: 20px;
+  color: rgba(27, 27, 27, 0.466);
+}
+
+#users #scrollWrapper main.usersList .reqLi .right i.fa-check {
+  font-size: 20px;
+  cursor: pointer;
+  background: rgba(110, 110, 110, 0.089);
+  padding: 10px 10px;
+  border-radius: 50%;
+}
+
+#users #scrollWrapper main.usersList .reqLi .right i.fa-times {
+  font-size: 20px;
+  cursor: pointer;
+  background: rgba(110, 110, 110, 0.089);
+  padding: 10px 14px;
+  border-radius: 50%;
+}
+
+#users #scrollWrapper main.usersList .reqLi .right i:active {
+  background: rgba(158, 158, 158, 0.39);
+}
+
+#users #scrollWrapper main.usersList .userLi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 9px 10px;
+  margin: 0px 10px;
+  border-radius: 20px;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  position: relative;
+}
+
+#users #scrollWrapper main.usersList .userLi .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+#users #scrollWrapper main.usersList .userLi .left .image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+}
+
+#users #scrollWrapper main.usersList .userLi .left .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+#users #scrollWrapper main.usersList .userLi .left .image .active {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  background: #1cd11c;
+  border: 2px solid #fff;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+#users #scrollWrapper main.usersList .userLi .left .image .inactive {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  background: grey;
+  border: 2px solid #fff;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+#users #scrollWrapper main.usersList .userLi .left .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#users #scrollWrapper main.usersList .userLi .left .details span.name {
+  font-weight: 500;
+  font-size: 19px;
+  color: rgba(27, 27, 27, 0.767);
+}
+
+#users #scrollWrapper main.usersList .userLi .left .details span.status {
+  font-weight: 500;
+  font-size: 12px;
+  margin-left: 20px;
+  color: rgba(27, 27, 27, 0.466);
+  max-width: 100%;
+  overflow: hidden;
+}
+
+#users #scrollWrapper main.usersList .userLi .right {
+  padding: 8px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+#users #scrollWrapper main.usersList .userLi .right i {
+  visibility: hidden;
+  color: rgba(44, 44, 44, 0.678);
+  font-size: 18px;
+}
+
+#users #scrollWrapper main.usersList .userLi .right:active {
+  background: rgba(190, 190, 190, 0.158);
+}
+
+#users #scrollWrapper main.usersList .userLi:hover i.fa-chevron-right {
+  visibility: visible;
+}
+
+#users #scrollWrapper::-webkit-scrollbar {
+  width: 8px;
+}
+
+#users #scrollWrapper::-webkit-scrollbar-thumb {
+  background: #5c5c5c7a;
+  border-radius: 3px;
+}
+
+#Addfriends .modal-content .modal-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#Addfriends .modal-content .modal-header .Wrapper {
+  width: 90%;
+  border-radius: 50px;
+  padding: 2px 18px;
+  background: rgba(206, 206, 206, 0.192);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#Addfriends .modal-content .modal-header .Wrapper i {
+  font-size: 19px;
+  color: #b4b4b4;
+}
+
+#Addfriends .modal-content .modal-header .Wrapper input {
+  background: none;
+  outline: none;
+  border: none;
+}
+
+#Addfriends .modal-content .modal-header .Wrapper span {
+  font-size: 30px;
+  color: #b4b4b4;
+  cursor: pointer;
+}
+
+#Addfriends .modal-content .modal-body {
+  max-height: 50vh;
+  overflow: auto;
+  margin-bottom: 5px;
+}
+
+#Addfriends .modal-content .modal-body .userSearch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 15px;
+}
+
+#Addfriends .modal-content .modal-body .userSearch .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  pointer-events: none;
+}
+
+#Addfriends .modal-content .modal-body .userSearch .left .image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+}
+
+#Addfriends .modal-content .modal-body .userSearch .left .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+#Addfriends .modal-content .modal-body .userSearch .left .image .active {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  background: #24e224;
+  border: 2px solid #fff;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+#Addfriends .modal-content .modal-body .userSearch .left .image .inactive {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  background: #bdbdbd;
+  border: 2px solid #fff;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+#Addfriends .modal-content .modal-body .userSearch .left .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#Addfriends .modal-content .modal-body .userSearch .left .details span.name {
+  font-weight: 500;
+  font-size: 19px;
+  color: rgba(27, 27, 27, 0.767);
+}
+
+#Addfriends .modal-content .modal-body .userSearch .left .details span.status {
+  font-weight: 500;
+  font-size: 12px;
+  color: rgba(27, 27, 27, 0.466);
+  margin-left: 20px;
+}
+
+#Addfriends .modal-content .modal-body .userSearch .right {
+  background: rgba(190, 190, 190, 0.397);
+  padding: 8px 13px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+#Addfriends .modal-content .modal-body .userSearch .right span {
+  color: rgba(44, 44, 44, 0.678);
+  font-size: 18px;
+}
+
+#Addfriends .modal-content .modal-body .userSearch .right:active {
+  background: rgba(190, 190, 190, 0.158);
+}
+
+#Addfriends .modal-content .modal-body::-webkit-scrollbar {
+  display: none;
+}
+
+.popupinActive {
+  display: none !important;
+}
+/*# sourceMappingURL=users.css.map */

@@ -1,0 +1,127 @@
+#signup {
+  background: #7643ff;
+  overflow: hidden;
+  .row {
+    .col-xl-4 {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      #wrapper {
+        transform: scale(0.9);
+        width: 100%;
+        background: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 3px 3px 10px 0px rgba(27, 27, 27, 0.164),
+          -3px -3px 10px 0px rgba(27, 27, 27, 0.103);
+
+        .heading {
+          height: 40vh;
+          background: #7643ff;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+          border-bottom-left-radius: 100% 20%;
+          img {
+            width: 7em;
+            height: 7em;
+            object-fit: cover;
+            animation: show 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+          }
+          @keyframes show {
+            0% {
+              transform: scale(0.5);
+            }
+            90% {
+              transform: scale(1.1);
+            }
+            100% {
+              transform: scale(1);
+            }
+          }
+          span {
+            margin-top: 1rem;
+            font-size: 25px;
+            color: #fff;
+          }
+        }
+        .form {
+          margin: 20px 0px;
+          padding: 5px 50px;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          input {
+            background: none;
+            outline: none;
+            border: none;
+            border: 0.5px solid rgba(0, 0, 0, 0.171);
+            border-radius: 40px;
+            padding: 10px 20px;
+          }
+          .username,
+          .password {
+            display: flex;
+            justify-content: start;
+            flex-direction: column;
+            margin: 10px 0px;
+            span {
+              font-size: 14px;
+              margin: 0px 0px 0px 20px;
+            }
+            animation: visible 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+          }
+          .remember {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-left: 20px;
+            animation: visible 1s cubic-bezier(0.645, 0.045, 0.355, 1) 0.3s;
+            span {
+              margin-left: 10px;
+              margin-top: -2px;
+              color: #7643ff;
+              font-weight: 500;
+            }
+          }
+          button {
+            background: none;
+            outline: none;
+            border: none;
+            background: #7643ff;
+            color: #fff;
+            padding: 15px 0px;
+            border-radius: 40px;
+            margin-top: 10px;
+            transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+            animation: visible 1s 0.6s;
+          }
+
+          //animation
+          @keyframes visible {
+            0% {
+              transform: translateY(40%);
+              opacity: 0;
+            }
+            90% {
+              transform: translateY(-2%);
+              opacity: 1;
+            }
+            100% {
+              transform: translateY(0%);
+              opacity: 1;
+            }
+          }
+        }
+      }
+      @media screen and (max-width: 768px) {
+        #wrapper {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
